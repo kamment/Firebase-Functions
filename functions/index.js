@@ -67,7 +67,7 @@ exports.FollowNotification = functions.firestore.document('Users/{user_id}/Follo
   const userData = userInfo.data()
   const tokenPhone = userData.tokenPhone
 
-
+  //Notificacion
   const message = {
     "to": tokenPhone,
     "body": `Te ha seguido ${follower_name}`,
